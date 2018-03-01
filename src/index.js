@@ -6,7 +6,7 @@ module.exports = function solveEquation(equation) {
   var c = split_array[7] + split_array[8];
   var korni = [];
   var x1, x2;
-  var dcr = Math.pow(b, 2) - (4 * a * c);
+  var dcr = (b * b) - (4 * a * c);
     x1 = (-b + Math.sqrt(dcr)) / (2 * a);
     x2 = (-b - Math.sqrt(dcr)) / (2 * a);
     korni.push(Math.round(x1));
